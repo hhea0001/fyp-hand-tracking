@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hand Material
+  m_Shader: {fileID: 4800000, guid: cb67d86e5c9e98a4ba3a1fdc215c7482, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Albedo:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Diffuse:
+        m_Texture: {fileID: 2800000, guid: a7c584439a802d442bbd5cffcd54a4c3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTexture:
+        m_Texture: {fileID: 2800000, guid: fa3f7844a6302e74ea1d187c6e4266dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normals:
+        m_Texture: {fileID: 2800000, guid: f68890385ec527d44b966e73718019be, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 2800000, guid: e6b56c70b7baf9b4ab2846262b4c93cb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaCutoff: 0.5
+    - _Float0: 2.21
+    - _Float1: 1
+    - _Float2: 2.13
+    - _Float5: 2
+    - _Metallic: 0.4
+    - _NoiseScale: 2
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _Roughness: 10
+    - _SizeVariation: 0.01
+    - _Smoothness: 0.4
+    - _TranslucencyFalloff: 2
+    - _TranslucenyFalloff: 2
+    m_Colors:
+    - _Balance: {r: 0.02, g: 0.02, b: 0.1, a: 0.05}
+    - _Color0: {r: 0.9150943, g: 0.8841922, b: 0.85034704, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _NoiseColour: {r: 0.8962264, g: 0.7679272, b: 0.70598966, a: 0}
+    - _NoiseDark: {r: 1, g: 1, b: 1, a: 0}
+    - _NoiseLight: {r: 0.9528302, g: 0.7838069, b: 0.7056337, a: 0}
+    - _RandomSizeRange: {r: -0.02, g: 0.02, b: 0, a: 0}
+    - _Roughness: {r: 7.5, g: 6.5, b: 9.5, a: 8.5}
+    - _SkinColour: {r: 0.9714203, g: 0.9610277, b: 0.9506351, a: 1}
+    - _TranslucencyColour: {r: 0.16980994, g: 0.026124818, b: 0, a: 0}
+    - _TranslucenyColour: {r: 0.16981006, g: 0.026124818, b: 0, a: 0}
+    - _Vector0: {r: 0.5, g: 3, b: 0, a: 0}
+    - _Vector1: {r: 0, g: 30.77, b: 7.1, a: 0}
+  m_BuildTextureStacks: []

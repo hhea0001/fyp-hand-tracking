@@ -79,35 +79,50 @@ public class VideoLabeller : MonoBehaviour
 
     public void SaveData(string folder)
 	{
-        ImageData[] data = new ImageData[_data.Length];
+		//ValidationImageData[] data = new ValidationImageData[_data.Length];
 
-        HandData previousHandData = new HandData
-        {
-            action = _handAction,
-            x = _data[0].x,
-            y = _data[0].y,
-            z = 2,
-        };
+		//HandData previousHandData = new HandData
+		//{
+		//	action = _handAction,
+		//	x = _data[0].x,
+		//	y = _data[0].y,
+		//	z = 2,
+		//};
 
-        for (int i = 0; i < _data.Length; i++)
+		//for (int i = 0; i < _data.Length; i++)
+		//{
+		//	data[i] = new ValidationImageData
+		//	{
+		//		filename = i + ".png",
+		//		current = new HandData
+		//		{
+		//			action = _handAction,
+		//			x = _data[i].x,
+		//			y = _data[i].y,
+		//			z = 2,
+		//		},
+		//		previous = previousHandData,
+		//	};
+
+		//	previousHandData = data[i].current;
+		//}
+
+		ImageData[] data = new ImageData[_data.Length];
+
+		for (int i = 0; i < _data.Length; i++)
 		{
-            data[i] = new ImageData
-            {
-                filename = i + ".png",
-                current = new HandData
-                {
-                    action = _handAction,
-                    x = _data[i].x,
-                    y = _data[i].y,
-                    z = 2,
-                },
-                previous = previousHandData,
-            };
+			data[i] = new ImageData
+			{
+				filename = i + ".png",
 
-            previousHandData = data[i].current;
+				action = _handAction,
+				x = _data[i].x,
+				y = _data[i].y,
+				z = 2,
+			};
 		}
 
-        string jsonData = JsonConvert.SerializeObject(data, Formatting.Indented);
+		string jsonData = JsonConvert.SerializeObject(data, Formatting.Indented);
         File.WriteAllText(folder + "/data.json", jsonData);
         Debug.Log($"Saved data to {folder}/data.json");
     }

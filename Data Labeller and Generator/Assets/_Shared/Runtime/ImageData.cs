@@ -9,18 +9,29 @@ public enum HandAction : int
 }
 
 [Serializable]
-public struct HandData
+public struct ImageData
 {
+    public string filename;
     public HandAction action;
     public float x;
     public float y;
     public float z;
 }
 
-[Serializable]
-public struct ImageData
-{
-    public string filename;
-    public HandData current;
-    public HandData previous;
-}
+
+//[Serializable]
+//public struct HandData
+//{
+//    public HandAction action;
+//    public float x;
+//    public float y;
+//    public float z;
+//}
+
+//[Serializable]
+//public struct ValidationImageData
+//{
+//    public string filename;
+//    public HandData current;
+//    public HandData previous;
+//}
